@@ -2,7 +2,7 @@ const { default: mongoose } = require("mongoose");
 
 let enderecoSchema = new mongoose.Schema(
   {
-    pessoa_id: { type: mongoose.Schema.Types.ObjectId, ref: "pessoa" },
+    pessoa_id: { type: mongoose.Schema.Types.ObjectId, ref: "Pessoa" },
     cep: { type: String, required: true },
     logradouro: { type: String },
     numero: { type: Number },
